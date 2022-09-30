@@ -1,75 +1,210 @@
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  height:100vh;
-  background-color: #f5f5f5;
+  scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 body {
-  height:100vh;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color:#25167a;
-  width:30em;
-  background-color: #fff;
-  margin:0 auto;
-}
-body > * {
-  padding:.75rem
-}
-img {
-  max-width: 100%;
-}
-ul {
-  list-style: none;
-  padding:0;
-}
-a {
-  color: #25167a;
+  height: 100vh;
+  width: 100vw;
+  font-family: Fira sans, sans-serif;
 }
 
-li a {
-  cursor: pointer;
-  border: none;
-  font-weight: normal;
-  display: flex;
-  justify-content: flex-start;
-  align-items:stretch;
-  margin: .75rem 0;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
+header {
+  width: 100vw;
+  height: 6vh;
+  display: block;
+  background-color: #fff;
+}
+
+header #logo {
+  width: 16em;
+  height: auto;
+  background-color: #fff;
+  padding: 0.5em 1.2em;
+}
+
+a {
   text-decoration: none;
 }
-li a span {
-  background-color: #25167a;
-  color:#fff;
-  padding:.5rem 0;
-  flex:1 auto;
 
+aside {
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-li a:hover span {
-  background-color: #685FAE;
+
+aside a {
+  margin: auto;
 }
-li a:hover svg path {
-  fill: #685FAE;
+
+.categorie {
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: #bbb;
 }
-a svg {
-  height: 41px;
-  width: 36px;
-  fill: #25167a;
+
+.categorie svg {
+  margin: 0.4em auto;
+  display: block;
+  width: 3.6em;
+  height: auto;
+  fill: #bbb;
 }
-a svg:last-child {
-  transform: rotate(
-    180deg
-    );
-}
-header a {
-  width: 300px;
-  height: 42px;
-  display:block
-}
+
 main {
+  display: block;
+  margin: 1.6em;
+}
 
+main::before {
+  content: "";
+  width: 50%;
+  height: 2.5em;
+  display: block;
+  background-color: #bbb;
+  border-radius: 0.8em 4em 0em 0em;
+}
+
+footer nav {
+  scroll-snap-type: mandatory;
+  overflow: scroll;
+}
+
+footer {
+  display: block;
+  width: 100vw;
+  overflow: scroll;
+}
+
+footer ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer li {
+  padding: 1em;
+}
+
+li {
+  list-style: none;
+}
+
+/* Interface */
+
+.ui-settings {
+  display: inline-flex;
+  align-items: center;
+  float: inline-end;
+  padding: 0 1.6em;
+}
+
+.ui-settings li {
+  margin: 0.5em;
+}
+
+/* Typografie */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Fira Sans, sans-serif;
+  font-weight: 400;
+}
+
+/* Folder section */
+
+.folder {
+  width: auto;
+  height: 40vh;
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  background-color: #bbb;
+  border-radius: 0 0.5em 0.5em 0.5em;
+  padding: 1.2em 0.8em;
+  margin-top: -0.4em;
+  overflow: scroll;
+}
+
+.folder span {
+  position: sticky;
+}
+
+/* Scroll snap type footer */
+.holster {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+}
+
+.container {
+  display: flex;
+  overflow: auto;
+  outline: 1px dashed lightgray;
+  flex: none;
+}
+
+.container.x {
+  width: 100%;
+  height: 5em;
+  flex-flow: row nowrap;
+}
+
+/* scroll-snap */
+.x.mandatory-scroll-snapping {
+  scroll-snap-type: x mandatory;
+}
+
+.x.proximity-scroll-snapping {
+  scroll-snap-type: x proximity;
+}
+
+.container > div {
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+}
+
+.x.container > div {
+  width: 50%;
+}
+
+.x.container > div:first-child {
+  margin-left: 25%;
+}
+
+.x.container > div:last-child {
+  margin-right: 25%;
+}
+
+.left-fade {
+  width: 5em;
+  height: 5em;
+  display: inline-flex;
+  position: fixed;
+  left: 0;
+  background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(238,238,238,0) 100%);
+}
+
+.right-fade {
+  width: 5em;
+  height: 5em;
+  display: inline-flex;
+  position: fixed;
+  right: 0;
+  background: linear-gradient(90deg, rgba(238,238,238,0) 0%, rgba(238,238,238,1) 100%);
 }
