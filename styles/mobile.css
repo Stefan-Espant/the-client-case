@@ -1,0 +1,108 @@
+@media (min-width: 320px) and (max-width: 440px) {
+
+    .categorie {
+        display: flex;
+        width: 15em;
+        margin: 0.5em 0.1em;
+    }
+
+    .categorie svg {
+        margin: 0.8em;
+        display: block;
+        width: 3.6em;
+        height: auto;
+        fill: #B9005F;
+    }
+
+    .categorie p {
+        margin: auto 0.8em;
+    }
+
+
+    /* layout */
+
+    main {
+        display: flex;
+        margin: 4em 0;
+    }
+
+    .wrapper {
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    .intro {
+        width: 80vw;
+        margin: 1em 1em;
+    }
+
+    .options {
+        width: 80vw;
+        margin: 0.5em 1em;
+    }
+
+    .option-group {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    /* Typografie */
+
+}
+
+@media (min-width: 441px) and (max-width: 767px) {
+
+    .categorie {
+        display: flex;
+        width: 15em;
+        margin: 0.4em;
+    }
+
+    .categorie svg {
+        margin: 0.8em;
+        display: block;
+        width: 3.6em;
+        height: auto;
+        fill: #B9005F;
+    }
+
+    .categorie p {
+        margin: auto 0.8em;
+    }
+
+
+    /* layout */
+
+    main {
+        display: block;
+        margin: 8em 0em;
+    }
+
+    .wrapper {
+        width: 75vw;
+        margin: 0 auto;
+    }
+
+    .intro {
+        width: 80vw;
+        margin: 1em 1em;
+    }
+
+    .options {
+        width: 80vw;
+        margin: 0.5em 1em;
+    }
+
+    .option-group {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.8em 0;
+    }
+
+
+    /* Typografie */
+
+}

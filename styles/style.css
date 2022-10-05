@@ -19,14 +19,46 @@ header {
   width: 100vw;
   height: 6vh;
   display: block;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 
 header #logo {
-  width: 16em;
-  height: auto;
+  width: auto;
+  height: 5em;
+  border: 4px solid #fff;
+  border-radius: 0 0 3em 0;
   background-color: #fff;
   padding: 0.5em 1.2em;
+  position: absolute;
+}
+
+header #logo::after {
+  width: 10px;
+  aspect-ratio: 1/1;
+  background-color: #f72e96;
+}
+
+#logo svg {
+  left: 13.8em;
+  position: relative;
+  z-index: -9;
+  height: 6em;
+  fill: #fff;
+}
+
+#after-curve {
+  width: 80vw;
+  height: 2.5em;
+  background-color: #fff;
+  float: inline-end;
+  position: inherit;
+}
+
+#curve {
+  width: 1em;
+  height: 2em;
+  display: block;
+  background-color: sierra;
 }
 
 a {
@@ -46,10 +78,17 @@ aside a {
 }
 
 .categorie {
-  display: block;
-  margin: auto;
+  display: inline-block;
+  margin: 0;
   text-align: center;
   color: #bbb;
+}
+
+.categorie:hover {
+  background-color: #fff;
+  border-radius: 0.4em;
+  transition: 0.8s;
+}
 }
 
 .categorie svg {
@@ -57,22 +96,31 @@ aside a {
   display: block;
   width: 3.6em;
   height: auto;
-  fill: #bbb;
+  fill: #B9005F;
 }
+
+/* Layout */
 
 main {
-  display: block;
-  margin: 1.6em;
+  width: 100vw;
+  display: flex;
+  margin: auto;
+  height: 94vh;
 }
 
-main::before {
+.wrapper {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+/*main::before {
   content: "";
   width: 50%;
   height: 2.5em;
   display: block;
   background-color: #bbb;
   border-radius: 0.8em 4em 0em 0em;
-}
+}*/
 
 footer nav {
   scroll-snap-type: mandatory;
@@ -99,6 +147,27 @@ li {
   list-style: none;
 }
 
+.intro {
+  width: 50vw;
+  display: inline-block;
+}
+
+.options {
+  width: 50vw;
+  display: inline-block;
+  margin: 1em 0;
+}
+
+/* Operating */
+
+a:focus {
+  background-color: #fff;
+  border-radius: 0.4em;
+  color: #fff;
+  fill: #fff;
+  outline: none;
+}
+
 /* Interface */
 
 .ui-settings {
@@ -112,6 +181,19 @@ li {
   margin: 0.5em;
 }
 
+.ui-settings svg {
+  fill: #B9005F;
+}
+
+.ui-settings svg:focus {
+  fill: #fff;
+}
+
+.ui-settings svg:hover {
+  fill: #f72e96;
+  transition: 0.8s;
+}
+
 /* Typografie */
 
 h1,
@@ -122,6 +204,19 @@ h5,
 h6 {
   font-family: Fira Sans, sans-serif;
   font-weight: 400;
+  color: #B9005F;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  color: #444;
 }
 
 /* Folder section */
@@ -152,9 +247,8 @@ h6 {
 }
 
 .container {
-  display: flex;
-  overflow: auto;
-  outline: 1px dashed lightgray;
+  display: block;
+  overflow: none;
   flex: none;
 }
 
@@ -207,4 +301,10 @@ h6 {
   position: fixed;
   right: 0;
   background: linear-gradient(90deg, rgba(238,238,238,0) 0%, rgba(238,238,238,1) 100%);
+}
+
+
+
+@media screen {
+  
 }

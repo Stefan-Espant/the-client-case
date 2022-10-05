@@ -1,0 +1,64 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  .categorie {
+    display: flex;
+    width: 18em;
+    margin: 0.5em 0.1em;
+  }
+
+  .categorie svg {
+    margin: 0.8em;
+    display: block;
+    width: 3.6em;
+    height: auto;
+    fill: #b9005f;
+  }
+
+  .categorie p {
+    margin: auto 0.8em;
+  }
+
+  /* layout */
+
+  main {
+    display: flex;
+    margin: auto;
+    height: 94vh;
+}
+
+  .wrapper {
+    width: 75vw;
+    margin: auto;
+  }
+
+  .intro {
+    width: 80vw;
+    margin: auto;
+    padding: 1em;
+  }
+
+  .options {
+    width: 80vw;
+    margin: auto;
+    padding: 1em;
+  }
+
+  .option-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Typografie */
+  h1 {
+    font-size: 4em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  p {
+    color: #444;
+  }
+
+}
