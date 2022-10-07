@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 body {
@@ -71,17 +71,31 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 aside a {
   margin: auto;
 }
 
+.cntt {
+  width: 90vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2.5em auto;
+  flex-wrap: wrap;
+}
+
 .categorie {
   display: inline-block;
-  margin: 0;
+  margin: 0.4em;
+  padding: 0.4em;
   text-align: center;
   color: #bbb;
+  
 }
 
 .categorie:hover {
@@ -89,12 +103,16 @@ aside a {
   border-radius: 0.4em;
   transition: 0.8s;
 }
+
+.categorie:active {
+  background-color: #ddd;
 }
 
 .categorie svg {
   margin: 0.4em auto;
   display: block;
   width: 3.6em;
+  flex: 0 0 3em;
   height: auto;
   fill: #B9005F;
 }
@@ -102,10 +120,9 @@ aside a {
 /* Layout */
 
 main {
-  width: 100vw;
+  width: 90vw;
   display: flex;
   margin: auto;
-  height: 94vh;
 }
 
 .wrapper {
@@ -203,7 +220,7 @@ h4,
 h5,
 h6 {
   font-family: Fira Sans, sans-serif;
-  font-weight: 400;
+  font-weight: initial;
   color: #B9005F;
 }
 
@@ -211,27 +228,30 @@ h1 {
   font-size: 3em;
 }
 
-h2 {
-  font-size: 1.5em;
+h1 small {
+  display: block;
+  font-size: 50%;
+}
+
+h2 small {
+  font-size: initial;
 }
 
 p {
   color: #444;
+  max-width: 30em;
 }
 
 /* Folder section */
 
 .folder {
   width: auto;
-  height: 40vh;
   display: inline-block;
-  margin: auto;
+  margin: 0 0 4em 0;
   position: relative;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 0 0.5em 0.5em 0.5em;
-  padding: 1.2em 0.8em;
-  margin-top: -0.4em;
-  overflow: scroll;
+  padding: 3em 2em;
 }
 
 .folder span {
@@ -240,7 +260,7 @@ p {
 
 /* Scroll snap type footer */
 .holster {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   flex-flow: column nowrap;

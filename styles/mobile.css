@@ -1,15 +1,15 @@
 @media (min-width: 320px) and (max-width: 440px) {
 
     .categorie {
-        display: flex;
-        width: 15em;
+        display: block;
+        width: auto;
         margin: 0.5em 0.1em;
     }
 
     .categorie svg {
-        margin: 0.8em;
+        margin: 0.8em auto;
         display: block;
-        width: 3.6em;
+        flex: 0 0 3.6em;
         height: auto;
         fill: #B9005F;
     }
@@ -23,8 +23,18 @@
 
     main {
         display: flex;
-        margin: 4em 0;
+        margin: 4em auto;
     }
+
+    aside .cntt {
+        width: 10vw;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+        flex-wrap: wrap;
+      }
 
     .wrapper {
         width: 100vw;
@@ -50,18 +60,21 @@
 
     /* Typografie */
 
+    h1 {
+        font-size: 2em;
+    }
 }
 
 @media (min-width: 441px) and (max-width: 767px) {
 
     .categorie {
         display: flex;
-        width: 15em;
-        margin: 0.4em;
+        width: 12em;
+        margin: 0.8em;
     }
 
     .categorie svg {
-        margin: 0.8em;
+        margin: 0.8em 0.2em;
         display: block;
         width: 3.6em;
         height: auto;
@@ -77,8 +90,28 @@
 
     main {
         display: block;
-        margin: 8em 0em;
+        margin: 8em auto;
     }
+
+    aside {
+        width: 100vw;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        flex-wrap: wrap;
+      }
+
+    .cntt {
+        width: 100vw;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 2.5em auto;
+        flex-wrap: wrap;
+      }
 
     .wrapper {
         width: 75vw;

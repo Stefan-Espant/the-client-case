@@ -1,14 +1,14 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .categorie {
-    display: flex;
-    width: 18em;
+    display: block;
+    width: 9em;
     margin: 0.5em 0.1em;
   }
 
   .categorie svg {
-    margin: 0.8em;
+    margin: 0.8em auto;
     display: block;
-    width: 3.6em;
+    flex: 0 0 3.6em;
     height: auto;
     fill: #b9005f;
   }
@@ -23,7 +23,17 @@
     display: flex;
     margin: auto;
     height: 94vh;
-}
+  }
+
+  .cntt {
+    width: 90vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2.5em auto;
+    flex-wrap: wrap;
+  }
 
   .wrapper {
     width: 75vw;
@@ -50,15 +60,23 @@
 
   /* Typografie */
   h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
-  
-  h2 {
-    font-size: 1.5em;
-  }
-  
+
   p {
     color: #444;
   }
+}
 
+@media (min-width: 640px) and (max-width: 768px) {
+  .cntt {
+    width: 80vw;
+    height: 25vh;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3em auto;
+    flex-wrap: wrap;
+  }
 }
