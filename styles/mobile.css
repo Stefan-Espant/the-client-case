@@ -13,6 +13,10 @@
     fill: #b9005f;
   }
 
+  .categorie .link-disabled svg {
+    fill: #ddd;
+  }
+
   .categorie p {
     margin: auto 0.8em;
   }
@@ -53,6 +57,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   /* Typografie */

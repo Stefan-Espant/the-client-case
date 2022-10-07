@@ -116,6 +116,10 @@ aside a {
   fill: #b9005f;
 }
 
+.categorie .link-disabled svg {
+  fill: #ddd;
+}
+
 /* Layout */
 
 main {
@@ -215,7 +219,6 @@ a:focus {
   cursor: not-allowed;
   opacity: 0.5;
   text-decoration: none;
-  }
 }
 
 /* Typografie */
@@ -244,18 +247,14 @@ h1 small {
   font-size: initial;
 }
 
-.uitleg::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f007";
-}
-
-h2 small {
+.tip {
   font-size: initial;
 }
 
 p {
   color: #444;
   max-width: 30em;
+  line-height: 1.4;
 }
 
 /* Folder section */
@@ -270,8 +269,52 @@ p {
   padding: 3em 2em;
 }
 
+.toptab {
+  display: flex;
+  align-items: baseline;
+}
+
+.tab {
+  content: '';
+  width: 20em;
+  height: 3em;
+  display: block;
+  background-color: #fff;
+  margin: 0;
+  border-radius: 3em 10em 0 0;
+}
+
+.curve {
+  content: '';
+  width: 3em;
+  height: 3em;
+  display: block;
+  background-color: #eee;
+  margin: 0 0 0 -0.8em;
+  border-radius: 0 5em 0 5em;
+  z-index: 1;
+}
+
+.curve-bg  {
+  content: '';
+  width: 3em;
+  height: 2em;
+  display: block;
+  background-color: #fff;
+  margin: 0 0 0 -3em;
+  border-radius: 2em 5em 0 0;
+  z-index: 0;
+}
+
 .folder span {
-  position: sticky;
+  position: static;
+  display: flex;
+  align-items: center;
+}
+
+.content svg {
+  margin: 0 0.2em 0 -0.4em;
+  fill: #b9005f;
 }
 
 /* Scroll snap type footer */
