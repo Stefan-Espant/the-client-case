@@ -24,8 +24,12 @@
   /* layout */
 
   main {
-    display: flex;
+    display: block;
     margin: 4em auto;
+  }
+
+  main .subject {
+    display: block;
   }
 
   aside .cntt {
@@ -36,6 +40,43 @@
     justify-content: space-around;
     margin: auto;
     flex-wrap: wrap;
+  }
+
+  .toptab {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .tab {
+    content: '';
+    width: 6em;
+    height: 3em;
+    display: block;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 3em 10em 0 0;
+  }
+  
+  .curve {
+    content: '';
+    width: 3em;
+    height: 3em;
+    display: block;
+    background-color: #eee;
+    margin: 0 0 0 -0.8em;
+    border-radius: 0 5em 0 5em;
+    z-index: 1;
+  }
+  
+  .curve-bg  {
+    content: '';
+    width: 3em;
+    height: 2em;
+    display: block;
+    background-color: #fff;
+    margin: 0 0 0 -3em;
+    border-radius: 2em 5em 0 0;
+    z-index: 0;
   }
 
   .wrapper {
@@ -90,7 +131,11 @@
 
   main {
     display: block;
-    margin: 8em auto;
+    margin: 4em auto;
+  }
+
+  main .subject {
+    display: block;
   }
 
   aside {
@@ -135,5 +180,55 @@
     margin: 0.8em 0;
   }
 
+  /* Interface */
+
+  .ui-settings {
+    display: inline-flex;
+    align-items: center;
+    float: inline-end;
+    padding: 0 1.6em;
+    margin: 1em auto;
+  }
+
   /* Typografie */
+}
+
+@media (min-width: 380px) and (max-width: 480px) {
+
+    .toptab {
+        display: flex;
+        align-items: baseline;
+      }
+      
+      .tab {
+        content: '';
+        width: 10em;
+        height: 3em;
+        display: block;
+        background-color: #fff;
+        margin: 0;
+        border-radius: 3em 10em 0 0;
+      }
+      
+      .curve {
+        content: '';
+        width: 3em;
+        height: 3em;
+        display: block;
+        background-color: #eee;
+        margin: 0 0 0 -0.8em;
+        border-radius: 0 5em 0 5em;
+        z-index: 1;
+      }
+      
+      .curve-bg  {
+        content: '';
+        width: 3em;
+        height: 2em;
+        display: block;
+        background-color: #fff;
+        margin: 0 0 0 -3em;
+        border-radius: 2em 5em 0 0;
+        z-index: 0;
+      }
 }
