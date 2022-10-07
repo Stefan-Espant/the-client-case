@@ -1,141 +1,134 @@
 @media (min-width: 320px) and (max-width: 440px) {
+  .categorie {
+    display: block;
+    width: auto;
+    margin: 0.5em 0.1em;
+  }
 
-    .categorie {
-        display: block;
-        width: auto;
-        margin: 0.5em 0.1em;
-    }
+  .categorie svg {
+    margin: 0.8em auto;
+    display: block;
+    flex: 0 0 3.6em;
+    height: auto;
+    fill: #b9005f;
+  }
 
-    .categorie svg {
-        margin: 0.8em auto;
-        display: block;
-        flex: 0 0 3.6em;
-        height: auto;
-        fill: #B9005F;
-    }
+  .categorie p {
+    margin: auto 0.8em;
+  }
 
-    .categorie p {
-        margin: auto 0.8em;
-    }
+  /* layout */
 
+  main {
+    display: flex;
+    margin: 4em auto;
+  }
 
-    /* layout */
+  aside .cntt {
+    width: 10vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+  }
 
-    main {
-        display: flex;
-        margin: 4em auto;
-    }
+  .wrapper {
+    width: 100vw;
+    margin: 0 auto;
+  }
 
-    aside .cntt {
-        width: 10vw;
-        height: 25vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin: auto;
-        flex-wrap: wrap;
-      }
+  .intro {
+    width: 80vw;
+    margin: 1em 1em;
+  }
 
-    .wrapper {
-        width: 100vw;
-        margin: 0 auto;
-    }
+  .options {
+    width: 80vw;
+    margin: 0.5em 1em;
+  }
 
-    .intro {
-        width: 80vw;
-        margin: 1em 1em;
-    }
+  .option-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .options {
-        width: 80vw;
-        margin: 0.5em 1em;
-    }
+  /* Typografie */
 
-    .option-group {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
-    /* Typografie */
-
-    h1 {
-        font-size: 2em;
-    }
+  h1 {
+    font-size: 2em;
+  }
 }
 
 @media (min-width: 441px) and (max-width: 767px) {
+  .categorie {
+    display: flex;
+    width: 12em;
+    margin: 0.8em;
+  }
 
-    .categorie {
-        display: flex;
-        width: 12em;
-        margin: 0.8em;
-    }
+  .categorie svg {
+    margin: 0.8em 0.2em;
+    display: block;
+    width: 3.6em;
+    height: auto;
+    fill: #b9005f;
+  }
 
-    .categorie svg {
-        margin: 0.8em 0.2em;
-        display: block;
-        width: 3.6em;
-        height: auto;
-        fill: #B9005F;
-    }
+  .categorie p {
+    margin: auto 0.8em;
+  }
 
-    .categorie p {
-        margin: auto 0.8em;
-    }
+  /* layout */
 
+  main {
+    display: block;
+    margin: 8em auto;
+  }
 
-    /* layout */
+  aside {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+  }
 
-    main {
-        display: block;
-        margin: 8em auto;
-    }
+  .cntt {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2.5em auto;
+    flex-wrap: wrap;
+  }
 
-    aside {
-        width: 100vw;
-        height: 25vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        flex-wrap: wrap;
-      }
+  .wrapper {
+    width: 75vw;
+    margin: 0 auto;
+  }
 
-    .cntt {
-        width: 100vw;
-        height: 25vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin: 2.5em auto;
-        flex-wrap: wrap;
-      }
+  .intro {
+    width: 80vw;
+    margin: 1em 1em;
+  }
 
-    .wrapper {
-        width: 75vw;
-        margin: 0 auto;
-    }
+  .options {
+    width: 80vw;
+    margin: 0.5em 1em;
+  }
 
-    .intro {
-        width: 80vw;
-        margin: 1em 1em;
-    }
+  .option-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.8em 0;
+  }
 
-    .options {
-        width: 80vw;
-        margin: 0.5em 1em;
-    }
-
-    .option-group {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0.8em 0;
-    }
-
-
-    /* Typografie */
-
+  /* Typografie */
 }

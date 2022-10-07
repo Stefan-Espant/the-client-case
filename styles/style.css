@@ -95,7 +95,6 @@ aside a {
   padding: 0.4em;
   text-align: center;
   color: #bbb;
-  
 }
 
 .categorie:hover {
@@ -114,7 +113,7 @@ aside a {
   width: 3.6em;
   flex: 0 0 3em;
   height: auto;
-  fill: #B9005F;
+  fill: #b9005f;
 }
 
 /* Layout */
@@ -199,7 +198,7 @@ a:focus {
 }
 
 .ui-settings svg {
-  fill: #B9005F;
+  fill: #b9005f;
 }
 
 .ui-settings svg:focus {
@@ -209,6 +208,14 @@ a:focus {
 .ui-settings svg:hover {
   fill: #f72e96;
   transition: 0.8s;
+}
+
+.link-disabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+  }
 }
 
 /* Typografie */
@@ -221,7 +228,7 @@ h5,
 h6 {
   font-family: Fira Sans, sans-serif;
   font-weight: initial;
-  color: #B9005F;
+  color: #b9005f;
 }
 
 h1 {
@@ -231,6 +238,15 @@ h1 {
 h1 small {
   display: block;
   font-size: 50%;
+}
+
+.uitleg {
+  font-size: initial;
+}
+
+.uitleg::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f007";
 }
 
 h2 small {
@@ -311,7 +327,11 @@ p {
   display: inline-flex;
   position: fixed;
   left: 0;
-  background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(238,238,238,0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(238, 238, 238, 0) 100%
+  );
 }
 
 .right-fade {
@@ -320,11 +340,9 @@ p {
   display: inline-flex;
   position: fixed;
   right: 0;
-  background: linear-gradient(90deg, rgba(238,238,238,0) 0%, rgba(238,238,238,1) 100%);
-}
-
-
-
-@media screen {
-  
+  background: linear-gradient(
+    90deg,
+    rgba(238, 238, 238, 0) 0%,
+    rgba(238, 238, 238, 1) 100%
+  );
 }
