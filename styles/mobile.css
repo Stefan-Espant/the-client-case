@@ -21,6 +21,28 @@
     margin: auto 0.8em;
   }
 
+  /* Layout */
+
+  .subcat {
+    display: flex;
+    margin: 0.8em 0;
+    flex-wrap: wrap;
+  }
+  
+  .subcat-btn {
+    width: auto;
+    height: auto;
+    background-color: #b9005f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: end;
+    margin: 0.2em 0.4em;
+    padding: 0.4em 0.8em;
+    border-radius: 0.4em;
+    transition: 0.5s;
+  }
+
   /* layout */
 
   main {
@@ -28,7 +50,7 @@
     margin: 4em auto;
   }
 
-  main .subject {
+  .subject {
     display: block;
   }
 
@@ -105,6 +127,11 @@
 
   h1 {
     font-size: 2em;
+    max-width: 20em;
+  }
+
+  .toolgankelijk {
+    font-size: 2em;
   }
 }
 
@@ -134,7 +161,7 @@
     margin: 4em auto;
   }
 
-  main .subject {
+  .subject {
     display: block;
   }
 

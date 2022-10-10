@@ -26,8 +26,12 @@
   main {
     width: 66vw;
     height: 94vh;
-    display: inline-block;
+    display: block;
     margin: auto;
+  }
+
+  .subject {
+    display: inline-block;
   }
 
   .toptab {
@@ -120,11 +124,16 @@
     align-items: center;
     float: inline-end;
     padding: 0 1.6em;
-    margin: 2em 0 -2em;
+    margin: 2em 0 0;
   }
 
   /* Typografie */
   h1 {
+    font-size: 2em;
+    max-width: 20em;
+  }
+
+  .toolgankelijk {
     font-size: 4em;
   }
 

@@ -29,7 +29,7 @@
     height: 94vh;
   }
 
-  main .subject {
+  .subject {
     display: block;
   }
 
@@ -115,7 +115,12 @@
 
   /* Typografie */
   h1 {
-    font-size: 3em;
+    font-size: 2em;
+    max-width: 20em;
+  }
+
+  h1 .toolgankelijk {
+    font-size: 2em;
   }
 
   p {
