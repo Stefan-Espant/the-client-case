@@ -103,6 +103,10 @@
     flex-wrap: wrap;
   }
 
+  .folder {
+    min-height: 10em;
+  }
+
   /* Interface */
 
   .ui-settings {

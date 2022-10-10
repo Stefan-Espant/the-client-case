@@ -295,6 +295,7 @@ p {
   background-color: #fff;
   border-radius: 0 0.5em 0.5em 0.5em;
   padding: 3em 2em;
+  min-height: 30em;
 }
 
 .toptab {
