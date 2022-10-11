@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../styles/mobile.css" />
     <link rel="stylesheet" href="../styles/tablet.css" />
     <link rel="stylesheet" href="../styles/desktop.css" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="./assets/va-favicon.png" />
   </head>
 
   <body>
@@ -133,56 +133,56 @@
           <div class="subcat">
             <button
               class="subcat-btn"
-              onclick="toggle('article4_1')"
+              data-id="article4_1"
             >
               4.1 Juiste HTML structuur
             </button>
             <button
               class="subcat-btn"
-              onclick="toggle('article4_2')"
+              data-id="article4_2"
             >
-              4.2 Gebruik spaties 7 tabs
+              4.2 Gebruik spaties & tabs
             </button>
             <button
               class="subcat-btn"
-              onclick="toggle('article4_3')"
+              data-id="article4_3"
             >
               4.3 Afbeeldingen met tekstalternatief
             </button>
             <button
               class="subcat-btn"
-              onclick="toggle('article4_4')"
+              data-id="article4_4"
             >
               4.4 Afbeeldingen met omschreven link
             </button>
             <button
               class="subcat-btn"
-              onclick="toggle('article4_5')"
+              data-id="article4_5"
             >
               4.5 Decoratieve afbeeldingen
             </button>
             <button
               class="subcat-btn"
-              onclick="toggle('article4_6')"
+              data-id="article4_6"
             >
-              4.6 Audio 7 video alternatieven
+              4.6 Audio & video alternatieven
             </button>
             <button
               class="subcat-btn"
-              onclick="toggle('article4_7')"
+              data-id="article4_7"
             >
               4.7 Visuele transscript
             </button>
             <button
             class="subcat-btn"
-            onclick="toggle('article4_8')"
+            data-id="article4_8"
           >
             4.8 Gebruik echte tabellen
           </button>
           </div>
-          <article id="article4_1" style="display: none">
+          <article id="article4_1" class="content-item hide">
             <h1>
-              Is de juiste structuur van de tekst aangegeven via de editor van het CMS of in HTML-codes
+              4.1 Is de juiste structuur van de tekst aangegeven via de editor van het CMS of in HTML-codes
             </h1>
             <br />
             <span>
@@ -244,9 +244,9 @@
               Voor het bouwen van websites zijn internationale standaarden ontwikkeld. Door de standaarden te volgen gebruik je de code op de manier waarop deze bedoeld is. Hulptechnologieën sluiten aan bij de ze standaarden. 
             </p>
           </article>
-          <article id="article4_2" style="display: none">
+          <article id="article4_2" class="content-item hide">
             <h1>
-              Er zijn geen spaties of tabs gebruikt om kolommen, tabellen of speciale teksteffecten te maken. 
+              4.2 Er zijn geen spaties of tabs gebruikt om kolommen, tabellen of speciale teksteffecten te maken. 
             </h1>
             <br />
             <span>
@@ -308,9 +308,9 @@
               Tabellen moeten gemaakt worden met de tabelfuncties van de editor in het CMS. Voor kolommen en woorden met letters die verder uit elkaar staan, moet CSS gebruikt worden.
             </p>
           </article>
-          <article id="article4_3" style="display: none">
+          <article id="article4_3" class="content-item hide">
             <h1>
-              Afbeeldingen die informatie overdragen hebben een tekstueel alternatief
+              4.3 Afbeeldingen die informatie overdragen hebben een tekstueel alternatief
             </h1>
             <br />
             <span>
@@ -372,9 +372,9 @@
               Een tekstueel alternatief werkt alleen als de beschrijving adequaat is. In veel gevallen gaat het om ‘vertellen wat je ziet’. Soms gaat het juist om ‘vertellen wat dit doet’, bijvoorbeeld bij een button in een formulier. En als een afbeelding geen informatie toevoegt, is het beter ook geen tekstalternatief te geven. Denk goed na over de tekstuele beschrijving. Iemand die alleen de tekstalternatieven ziet zou de informatie nog steeds moeten kunnen begrijpen en de website nog steeds moeten kunnen gebruiken.
             </p>
           </article>
-          <article id="article4_4" style="display: none">
+          <article id="article4_4" class="content-item hide">
             <h1>
-              Afbeeldingen die als link worden gebruikt, hebben een alt-tekst die het doel van de link beschrijft. 
+              4.4 Afbeeldingen die als link worden gebruikt, hebben een alt-tekst die het doel van de link beschrijft. 
             </h1>
             <br />
             <span>
@@ -434,9 +434,9 @@
             Als de afbeelding in een link staat met een tekst erbij, dan is de afbeelding ook niet-informatief en ook dan volstaat een leeg alt-attribuut. De screenreader leest dan de linktekst op. Als de afbeelding aanklikbaar is en in de link staat geen tekst, dan gebruik je wel een alt-tekst en beschrijf je waar de afbeelding naartoe linkt.
             </p>
           </article>
-          <article id="article4_5" style="display: none">
+          <article id="article4_5" class="content-item hide">
             <h1>
-              Decoratieve afbeeldingen kunnen door hulptechnologieën genegeerd worden. 
+              4.5 Decoratieve afbeeldingen kunnen door hulptechnologieën genegeerd worden. 
             </h1>
             <br />
             <span>
@@ -498,9 +498,9 @@
               Dit kan bijvoorbeeld door de alt-tekst leeg te laten. 
             </p>
           </article>
-          <article id="article4_6" style="display: none">
+          <article id="article4_6" class="content-item hide">
             <h1>
-              Audio en video hebben een kort tekstueel alternatief dat de inhoud beschrijft. 
+              4.6 Audio en video hebben een kort tekstueel alternatief dat de inhoud beschrijft. 
             </h1>
             <br />
             <span>
@@ -562,9 +562,9 @@
               Hoe je dit alternatief plaatst hangt af van de techniek die gebruikt is om het multimediabestand op de webpagina te plaatsen.
             </p>
           </article>
-          <article id="article4_7" style="display: none">
+          <article id="article4_7" class="content-item hide">
             <h1>
-              Filmpjes, bewegend beeld en audio hebben (indien nodig) een transcript.
+              4.7 Filmpjes, bewegend beeld en audio hebben (indien nodig) een transcript.
             </h1>
             <br />
             <span>
@@ -626,9 +626,9 @@
               Kun je in het filmpje bijvoorbeeld op een knop drukken, dan neem je in het transcript een link op naar de pagina waar je die actie kunt uitvoeren.
             </p>
           </article>
-          <article id="article4_8" style="display: none">
+          <article id="article4_8" class="content-item hide">
             <h1>
-              Informatie die in een tabel hoort, staat ook écht in een tabel en heeft de juiste HTML-code.
+              4.8 Informatie die in een tabel hoort, staat ook écht in een tabel en heeft de juiste HTML-code.
             </h1>
             <br />
             <span>

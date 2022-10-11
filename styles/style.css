@@ -13,6 +13,7 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: Fira sans, sans-serif;
+  background-color: ;
 }
 
 header {
@@ -33,7 +34,7 @@ header #logo {
 }
 
 header #logo::after {
-  width: 10px;
+  width: 1em;
   aspect-ratio: 1/1;
   background-color: #f72e96;
 }
@@ -52,6 +53,17 @@ header #logo::after {
   background-color: #fff;
   float: inline-end;
   position: inherit;
+}
+
+#after-curve::before {
+  content: '';
+  width: 3.5em;
+  height: 3.5em;
+  position: absolute;
+  top: 2.5em;
+  left: 13.8em;
+  box-shadow: 0.1em -1em 0 -0.2em white;
+  border-radius: 60% 0 0 0;
 }
 
 #curve {
@@ -219,10 +231,10 @@ a:focus {
   border: none;
   cursor: pointer;
   text-align: end;
-  margin: 0.2em 0.4em;
+  margin: 0.2em;
   padding: 0.4em 0.8em;
   border-radius: 0.4em;
-  transition: 0.5s;
+  transition: 0.2s ease;
 }
 
 .subcat-btn:active {
@@ -230,7 +242,7 @@ a:focus {
 }
 
 .subcat-btn:focus {
-  background-image: linear-gradient(95.6deg, #fff, #eee);
+  background-image: linear-gradient(95.6deg, #fafafa, #eee);
   color: #b9005f;
   outline: none;
   transition: 0.8s;
@@ -349,12 +361,8 @@ p {
 /* Toggle tussen articles */
 
 article {
-  display: none;
+  /* display: none; */
   margin: 2em 0;
-}
-
-.show {
-  display: block;
 }
 
 .hide {
@@ -365,9 +373,15 @@ article {
 
 /* Toggle tussen font sizes */
 .text120 {
-  font-size: 1em * 120%;
+  font-size: 120%;
 }
 
 .text100 {
   font-size: 1em * 100%;
+}
+
+/* Verhoog contrast */
+.dark-contrast {
+  background-color: black;
+  color: white;
 }

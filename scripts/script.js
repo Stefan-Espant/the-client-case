@@ -1,7 +1,23 @@
-function toggle(id) {
-    var showCtnt = document.getElementById(id);
-    if(showCtnt.style.display == "none") showCtnt.style.display = "block";
+const allButtons = document.querySelectorAll('.subcat-btn')
+const allContent = document.querySelectorAll('.content-item')
 
-    else 
-        showCtnt.style.display = "none";   
+allButtons.forEach(item => {
+    item.addEventListener('click', () => {
+        const id = item.dataset.id
+        const active = document.getElementById(id)
+
+        allContent.forEach(content => content.classList.add('hide'))
+        active.classList.remove('hide')
+
+    })
+})
+
+function increaseFontSize() {
+    const text = document.getElementsByClassName(".folder");
+    text.classList.toggle(".text120");
 }
+
+function increaseContrast() {
+    const element = document.body;
+    element.classList.toggle("dark-contrast");
+  } 
