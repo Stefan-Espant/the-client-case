@@ -23,7 +23,8 @@
 ## Bronnen
 
 https://css-tricks.com<br>
-https://stackoverflow.com
+https://stackoverflow.com<br>
+https://whaa.dev
 
 ## Licentie
 
