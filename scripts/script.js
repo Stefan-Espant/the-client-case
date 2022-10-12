@@ -21,3 +21,4 @@ function increaseContrast() {
     const element = document.body;
     element.classList.toggle("dark-contrast");
   } 
+

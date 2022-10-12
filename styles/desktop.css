@@ -32,6 +32,7 @@
 
   .subject {
     display: inline-block;
+    margin: 4em 0;
   }
 
   .toptab {
@@ -97,7 +98,7 @@
   }
 
   .intro {
-    width: 60vw;
+    width: 50vw;
     margin: auto;
     padding: 1em;
     justify-content: center;
@@ -107,7 +108,7 @@
   }
 
   .options {
-    width: 40vw;
+    width: 30vw;
     margin: auto;
     padding: 1em;
   }
@@ -119,7 +120,7 @@
   }
 
   .folder {
-    min-height: 20em;
+    min-height: 25em;
   }
 
   /* Interface */

@@ -46,6 +46,12 @@ header #logo::after {
   height: 6em;
   fill: #fff;
 }
+/*
+#logo:hover {
+  border: 0.2em solid red;
+  transition: 0.8s;
+}
+*/
 
 #after-curve {
   width: 80vw;
@@ -143,6 +149,7 @@ main {
 
 .index {
   display: flex;
+  height: 80vh;
 }
 
 .wrapper {
@@ -384,4 +391,9 @@ article {
 .dark-contrast {
   background-color: black;
   color: white;
+}
+
+.content-item {
+  transition: 0.8s;
+  padding: 0 0.8em;
 }
