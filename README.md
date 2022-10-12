@@ -22,6 +22,8 @@
 
 ## Bronnen
 
+https://css-tricks.com
+
 ## Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
