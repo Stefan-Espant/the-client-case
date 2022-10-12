@@ -23,6 +23,7 @@
 ## Bronnen
 
 https://css-tricks.com
+https://stackoverflow.com
 
 ## Licentie
 
