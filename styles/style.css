@@ -354,8 +354,7 @@ p {
   z-index: 0;
 }
 
-.folder span {
-  position: static;
+.content-item div {
   display: flex;
   align-items: center;
 }
