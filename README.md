@@ -29,6 +29,20 @@ http://stefan-vervoeregio-amsterdam.student.fdnd.nl/
 De sitemap is opgebouwd uit de 3 basistalen: HTML, CSS & Javascript.
 
 ### html
+De html bestaat overal uit dezelfde indeling: een head, een body met daarin een aside en een main element.
+
+#### head
+
+
+#### body
+
+
+#### aside
+
+
+#### main
+
+
 
 ### css
 
