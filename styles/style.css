@@ -225,6 +225,7 @@ a:focus {
 }
 
 .subcat {
+  width: 80%;
   display: flex;
   margin: 0.8em 0;
   flex-wrap: wrap;
