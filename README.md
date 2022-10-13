@@ -40,6 +40,7 @@ Javascript heb ik toegepast op de knoppen die de content laten weergeven.
 
 Om het product te bouwen heb ik de volgende websites gebruikt voor antwoorden, voorbeelden en kennis.<br>
 https://css-tricks.com<br>
+https://developer.mozilla.org/en-US/<br>
 https://stackoverflow.com<br>
 https://whaa.dev
 
